@@ -4,19 +4,29 @@ export default function DogDetails({ dog }) {
   function toggleDogDetails() {
     setShowDetails(!showDetails);
   }
-
   return (
     <>
       <button onClick={toggleDogDetails}>
         {!showDetails ? "Show details" : "Hide details"}
       </button>
       {showDetails ? (
-        <>
-          <p>id:{dog.id}</p>
-          <p>present:{dog.present ? "true" : "false"}</p>
-          <p>grade: {dog.grade}</p>
-          <p>notes: {dog.notes}</p>
-        </>
+        <div className="dog-details">
+          <p>
+            {" "}
+            <span>id:</span>
+            {dog.id}
+          </p>
+          <p>
+            <span>present:</span>
+            {dog.present ? "true" : "false"}
+          </p>
+          <p>
+            <span>grade:</span> {dog.grade}
+          </p>
+          <p>
+            <span>notes:</span> {dog.notes}
+          </p>
+        </div>
       ) : null}
     </>
   );
