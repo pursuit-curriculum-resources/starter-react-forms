@@ -45,14 +45,9 @@ function App() {
   }
 
   function updateDogAttendance(dogId) {
-    // Copy the dogs array so that the copy can be updated
     const dogArray = [...dogs];
-    // Find the dog with the matching id number's array position
     const index = dogArray.findIndex((dog) => dogId === dog.id);
-    // Access the dog's present property and update the value
-    // By using ! it will change a true value to false or a false value to true
     dogArray[index].present = !dogArray[index].present;
-    // Put the updated array into setDogs to update the dogs array
     setDogs(dogArray);
   }
   return (

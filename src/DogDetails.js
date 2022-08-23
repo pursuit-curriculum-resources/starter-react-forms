@@ -17,14 +17,20 @@ export default function DogDetails({ dog }) {
             {dog.id}
           </p>
           <p>
-            <span>present:</span>
+            <span>Present:</span>
             {dog.present ? "true" : "false"}
           </p>
           <p>
-            <span>grade:</span> {dog.grade}
+            <span>Grade:</span> {dog.grade}
           </p>
           <p>
-            <span>notes:</span> {dog.notes}
+            <span>Likes swimming:</span> {dog.likesSwimming ? "true" : "false"}
+          </p>
+          <p>
+            <span>Favorite flavor:</span> {dog.favFlavor}
+          </p>
+          <p>
+            <span>Notes:</span> {dog.notes}
           </p>
         </div>
       ) : null}
