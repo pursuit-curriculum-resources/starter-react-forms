@@ -92,7 +92,7 @@ function App() {
                 <option value="beef">Beef</option>
                 <option value="chicken">Chicken</option>
                 <option value="carrot">Carrot</option>
-                <option value="bacon">Carrot</option>
+                <option value="bacon">Bacon</option>
               </select>
               <label>Likes swimming:</label>
               <input type="checkbox" />
